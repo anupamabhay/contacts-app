@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css2?family=Andika:ital,wght@0,400;0,700;1,400;1,700&family=Caveat+Brush&family=Chivo+Mono:ital,wght@0,100..900;1,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Josefin+Slab:ital,wght@0,100..700;1,100..700&family=Livvic:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Ojuju:wght@200..800&family=Rubik:ital,wght@0,300..900;1,300..900&family=Urbanist:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    letter-spacing: 1px;
+    font-family: "Rubik", sans-serif;
+}
+
+body {
+    background-color: #2F2E2C;
+}
+
+h2, h3 {
+    font-family: "Rubik", sans-serif;
+}
+
+/* App.jsx */
+
+.main-container {
+    /* border: 2px solid rgb(29, 65, 213); */
+    height: 100vh;
+}
+
+/* Header.jsx */
+
+.header-container {
+    /* border: 1px solid lightsalmon; */
+    background-color: #3C614F;
+    color: white;
+    height: 7vh;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+/* ContactList.jsx */
+
+.contacts-container {
+    /* border: 2px solid yellow; */
+    /* height: 100%; */
+    padding-bottom: 1rem;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.contacts-header {
+    /* border: 1px solid blueviolet; */
+    height: 5vh;
+    width: 100%;
+    padding: 1rem 0 1rem 1rem;
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.details-header {
+    /* border: 1px solid rgb(0, 255, 51); */
+    text-transform: uppercase; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-list {
+    /* border: 2px solid red; */
+    padding: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.btn {
+    border: none;
+    border-radius: 0.5rem;
+    background-color: white;
+    color: #3C614F;
+    padding: 0.5rem;
+    width: 130px;
+    text-transform: uppercase;
+    margin: 0 1rem;
+    font-family: "Rubik", sans-serif;
+    font-weight: 500;
+}
+
+.btn:hover {
+    background-color: #3C614F;
+    color: white;
+}
+
+.list-item {
+    border: 1px solid #484E48;
+    border-radius: 1rem;
+    height: 25%;
+    padding: 1rem;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: space-between;
+}
+.list-item:hover {
+    background-color: #484E48;
+}
+
+.user-container {
+    /* border: 2px solid rgb(124, 225, 65); */
+    width: 90%;
+    display: flex;
+    gap: 1rem;
+    align-items: center;    
+    color: white;
+}
+.user-container:hover {
+    color: white;
+}
+
+.user {
+    /* border: 2px solid royalblue; */
+    width: 100%;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.user-img {
+    height: 2.5rem;
+}
+
+.user-details {
+    /* border: 1px solid rgb(225, 65, 140); */
+    display: flex;
+    flex-direction: column;
+}
+
+.username {
+    text-transform: capitalize;
+}
+
+.edit-btn {
+    color: #83c7a6
+}
+.edit-btn:hover {
+    color: white;
+    cursor: pointer;
+}
+
+.del-btn {
+    color: rgb(249, 176, 16);
+}
+.del-btn:hover {
+    color: rgb(255, 77, 42);
+    cursor: pointer;
+}
+
+/* ContactDetail.jsx */
+
+.contact-detail-container {
+    /* border: 2px solid rgb(0, 255, 225); */
+    /* height: 100%; */
+    padding-bottom: 1rem;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    /* justify-content: center; */
+}
+
+.details {
+    /* border: 2px solid #484E48; */
+    border-radius: 1rem;
+    max-width: 70vw;
+    /* height: 50vh; */
+    display: flex;
+    margin: 0 1rem;
+}
+
+.pfp-container {
+    /* border: 2px solid peru; */
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    background-color: #FEEEEE;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-image {
+    /* border-radius: 1rem; */
+    width: 100%;
+}
+
+.contact-detail {
+    /* border: 1px solid lime; */
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    background-color: #484E48;
+    /* font-size: 1.25rem; */
+    width: 50%;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.contact-detail-content {
+    /* border: 1px solid rgb(0, 179, 255); */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+
+}
+
+.user-name-container, .user-email-container, .user-phone-container {
+    /* border: 1px solid orange; */
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.name-header, .email-header, .phone-header {
+    font-weight: 500;
+    
+}
+
+/* AddContact.jsx */
+
+.addContact-container {
+    /* border: 2px solid yellow; */
+    /* background-color: #2F2E2C; */
+    height: 93vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.form {
+    /* border: 1px solid #484E48; */
+    padding:  0 1rem;
+    /* margin: 0 1rem; */
+    /* height: 20vh; */
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.inputs-container {
+    /* border: 1px solid yellow; */
+    /* height: 7vh; */
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    
+}
+
+.top-input-container, .bottom-input-container {
+    /* border: 1px solid orange; */
+    width: 50%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+}
+
+.name-container, .email-container, .contact-container, .form-btn-container {
+    /* border: 1px solid rgb(255, 0, 212); */
+    /* width: 48%; */
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 0.5rem;
+}
+
+.form-btn-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+label {
+    text-transform: uppercase;
+    font-weight: 600;
+    /* font-size: 1.15rem; */
+
+}
+input {
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    border: 1px solid #484E48;
+    background-color: rgb(255, 255, 255);
+}
+/* input::placeholder {
+    font-size: 0.9rem;
+    font-style: italic;
+    color: #b0b0b0;
+} */
+
+.add-btn {
+    font-family: "Rubik", sans-serif;
+    font-weight: 500;
+    border: 1px solid rgba(255, 255, 255, 0.361);
+    border-radius: 0.5rem;
+    background-color: #3C614F;
+    color: white;
+    padding: 0.5rem;
+    text-transform: uppercase;
+    /* margin: 0 1rem; */
+}
+
+.add-btn:hover {
+    background-color: white;
+    color: #3C614F;
+}
+
+
+/* ErrorPage.jsx */
+
+.error-container {
+    border: 1px solid blueviolet;
+    padding: 1rem 0 1rem 1rem;
+    margin-top: 1rem;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

@@ -1,0 +1,31 @@
+app.jsx
+
+1. create state using useState to store contact objects in an array
+2. define the handler function to update the state value with an id using uuid.
+3. add the state data into localStorage using useEffect. While adding, need to convert the state array containing js objects into a string/json object using JSON.stringify("keyname", stateVariable)
+4. need another useEffect hook to store the data from localStorage in the state in case the page reloads and the entire state data is lost. For this, we need to convert the json object back into a js object using JSON.parse(localStorage.getItem("keyname")). Store this in a variable and pass that variable to the handler function in order to update the state.
+
+5. create a function to delete a contact from the list of contacts. this function accepts an id, which will be passed to it from the ContactList.jsx component.
+6. render the ContactList.jsx, pass it the state and deleteContact() function as props. After that, render the AddContact.jsx component and pass the handler function as props.
+
+
+ContactList.jsx
+
+1. accept the data from app.jsx as props.
+2. destructure the contacts state and deleteContact() function from the props received.
+3. create a function which accepts the id as parameter and invokes the deleteContact() function (callback) of the parent/app.jsx component.
+4. use the map() to render through the list of contact objects stored in the state variable as an array. render the ContactCard.jsx inside this map() and pass each contact object as props, along with the deleteContact() function. Also need to pass a key value which can be the id.
+
+
+ContactsCard.jsx
+
+1. destructure the email, name, and id from the props received from ContactList.jsx
+2. render the details within div elements and what not.
+3. add a button which calls the deleteContact() function with the id as argument when it's clicked (onClick).
+    - This button, when clicked, will send the id of the particular contact object to the ContactList.jsx, which will call the deleteContact() function with the function with the id and pass it to app.jsx, where the actual deleteContact() function will get called and the state will be updated using the filter() method. This filter method will compare the passed id with the id of all the contact objects, and return a new array of objects with all the contact objects except for the one whose id matches the passed id.
+
+
+Command to run json server 
+
+json-server --watch db.json --port 8000 
+- port can be specified, it is 3000 by default.
