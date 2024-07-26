@@ -21,10 +21,6 @@ const AddContact = (props) => {
   //function to handle onSubmit()
   const handleSubmit = (e) => {
     e.preventDefault()
-    // if(name === "" || email === "") {
-    //   alert("All fields are required!");
-    //   return;
-    // }    
     //Call the updater method of parent element with current username and email 
     props.addContact(user);
     //Setting both input fields to be empty after form submission
