@@ -1,16 +1,16 @@
-import React, { useState, useEffect } from 'react'
-import 'semantic-ui-css/semantic.min.css'
-import Header from './components/Header'
-import AddContact from './components/AddContact'
-import ContactList from './components/ContactList'
+import React, { useState, useEffect } from 'react';
+import 'semantic-ui-css/semantic.min.css';
+import Header from './components/Header';
+import AddContact from './components/AddContact';
+import ContactList from './components/ContactList';
 import {v4 as uuid} from 'uuid';
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import Layout from './components/Layout'
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Layout from './components/Layout';
 import ErrorPage from './components/ErrorPage';
 import '/src/global.css';
 import ContactDetail from './components/ContactDetail';
 import api from './api/contacts';
-import EditContact from './components/EditContact'
+import EditContact from './components/EditContact';
 
 const App = () => {
 
