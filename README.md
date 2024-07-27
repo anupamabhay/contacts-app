@@ -14,6 +14,7 @@
 ## Contact Updated
 ![image_2024-07-26_20-55-45](https://github.com/user-attachments/assets/37c2ac74-21ea-4893-9f9d-1dd594fa1ebc)
 ## User Details
-![image_2024-07-27_10-13-05](https://github.com/user-attachments/assets/35062395-c653-4be5-a99d-3c4d5560b53a)
+![image_2024-07-27_10-20-25](https://github.com/user-attachments/assets/15a0de4d-0397-4b76-8612-b2aa364a1539)
+
 
 
